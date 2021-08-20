@@ -1,21 +1,22 @@
 package reverse;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StringReverse {
 
 	public static void main(String[] args) {
 		
-		String str;
-		Scanner scan=new Scanner(System.in);
-		System.out.print("Enter a string : ");
-		str=scan.nextLine();	
-		char[] ch=str.toCharArray(); 
-		System.out.println("Reverse of a String is :"); 
-		int j=ch.length;
-		for(int i=j;i>0;i--)
-		{
-		System.out.print(ch[i-1]); 
+		ArrayList<String> m = new ArrayList<>();
+		Scanner sc = new Scanner(System.in); 
+		System.out.print("Enter the size of string array : ");
+		int n = sc.nextInt();
+		for(int i=0;i<n;i++) {
+			m.add(sc.next());
+		}
+		System.out.println("Reversed Strings : ");
+		for(int j=m.size()-1;j>=0;j--) {
+			System.out.println(m.get(j));
 
 	}
 
