@@ -22,7 +22,7 @@ public class example {
 		String updateQuery="UPDATE EMP SET dob='3/10/1799' WHERE id=3";
 		((java.sql.Statement) stmt).executeUpdate(updateQuery);
 		
-		ResultSet rs=((java.sql.Statement) stmt).executeQuery("SELECT * FROM EMP1");
+		ResultSet rs=((java.sql.Statement) stmt).executeQuery("SELECT * FROM EMP");
 		System.out.println("Query Execution"+rs);
 		
 		while(rs.next()) {
